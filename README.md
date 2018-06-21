@@ -2,7 +2,7 @@
 ## Overview and Summary
 I try to implement the findings in the paper in this repo. Here's a summary of what I think is significant information.
 
-Neural Ordinary Differential Equations (NODE) introduces an interesting way of specifiying a neural network. Instead of treating the neural network as a sequence of discrete states, the approach parameterizes the derivative of the hidden state using a neural network. This parameterizing of the hidden state provides a continuous depth model provides a bunch of useful properties.
+Neural Ordinary Differential Equations introduces an interesting way of specifiying a neural network. Instead of treating the neural network as a sequence of discrete states, the approach parameterizes the derivative of the hidden state using a neural network. This parameterizing of the hidden state provides a continuous depth model provides a bunch of useful properties.
 
 ### Useful Properties I Understand
 1. Memory Efficiency: The specifications give a constant memory costs wrt to depth
