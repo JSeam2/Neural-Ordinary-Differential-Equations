@@ -8,7 +8,13 @@ Neural Ordinary Differential Equations introduces an interesting way of specifiy
 1. Memory Efficiency: The specifications give a constant memory costs wrt to depth
 2. Adaptive Computation: Adapt level of error for efficiency, useful for real-time or low-power applications
 3. Scalable and Invertible Normalizing Flows: Continuous transformation allows for easier computation of change of variables. The paper derives a new fclass of invertible density models that avoids the bottleneck of normalizing flows, allowing the model to be trained directly by max-likelihood.
-4. Continuous Time-series Models: Able to model time-series data that arrive at arbitrary times unlike RNNs.
+4. Scalable and invertible normalizing flows: The continuous transformation makes the change of variables formula easier to compute. This allows the constructuion of a new class of invertible density models that avoids previous bottlenecks. 
+
+5. Continuous Time-series Models: Able to model time-series data that arrive at arbitrary times unlike RNNs.
+
+#### What Are Normalizing Flows? I am confused.
+TODO
+
 
 ### Limitations
 1. Unstraightforward Minibatching: Though minibatching can still be achieved by concatenating the states of each batch elements together to form an ODE.
