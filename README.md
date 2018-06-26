@@ -12,9 +12,23 @@ Neural Ordinary Differential Equations introduces an interesting way of specifiy
 
 5. Continuous Time-series Models: Able to model time-series data that arrive at arbitrary times unlike RNNs.
 
-#### What Are Normalizing Flows? I am confused.
-TODO
+### What Are Normalizing Flows? I am confused.
+I got stumped on this one for a while. My reaction irl the whole time -> ( ・◇・)？ 
 
+If you're a noob like me you would probably get stumped too. Here's what I understand without the math.
+
+Imagine if you were in a conference and someone asked the presenter something really difficult. Making the presenter go ( ・◇・)？ The presenter
+doesn't want to cop out and look stupid so he/she tries to answer the question. The presenter then simplifies the question and answers that simpified question instead. Not satisfactory, but it should gets the point across. This is essentially the idea behind Variational Inference. The quantity that describes this is termed as the posterior distribution.
+
+What happens if this explanation seemed to hand wavy or oversimplistic? We need to find a slightly more detailed way of explaning the same thing. How should we tune the complexity of the explanation? This method of tuning the complexity is the idea behind Normalizing Flows. By using these normalizing flows, we can apply a sequence of invertible transformation (we can back and forth and not lose information) to transform that simple posterior distribution (ie. the explanation) into something more complex that captures the idea we want to describe. 
+
+This paper essentially provides a continuous formulation of the normalizing flow concept. While an elegant concept, it can get hard to compute terms, like the change of variables. Using the continuous formulation, the paper offers a method of using the trace of the mapping function, which is more efficient. Check the maths in the paper for a clearer picture.
+
+
+#### Useful links
+1. [Quora explanation by Sam Wang](https://www.quora.com/What-is-variational-inference) I used his analogy
+2. [Variational Inference by David  M. Blei](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf)
+3. [Variational Inference with Normalizing Flows Paper](https://arxiv.org/abs/1505.05770) 
 
 ### Limitations
 1. Unstraightforward Minibatching: Though minibatching can still be achieved by concatenating the states of each batch elements together to form an ODE.
