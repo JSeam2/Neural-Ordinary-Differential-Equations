@@ -1,5 +1,6 @@
 """
 From Appendix B in the paper
+Implementation of autograd
 """
 
 import scipy.integrate
