@@ -32,7 +32,7 @@ This paper essentially provides a continuous formulation of the normalizing flow
 
 ### Limitations
 1. Unstraightforward Minibatching: Though minibatching can still be achieved by concatenating the states of each batch elements together to form an ODE.
-2. Uniqueness: A unique solutio only exists if the neural netowrk has finate weights and Lipshitz nonlinearities like tanh or relu.
+2. Uniqueness: A unique solution only exists if the neural netowrk has finate weights and Lipshitz nonlinearities like tanh or relu.
 3. Reversibility: Forward trajectory of the network is invertible in principle, but numerical errors will emerge in forward ODE solver and reverse ODE solver (though this can be reduce at the cost of more computation). Information is lost due to multiple initial value mapping to the final state, this is expected to be a problem if the system dynamics encoded optimization-like, convergent dynamics.
 
 
