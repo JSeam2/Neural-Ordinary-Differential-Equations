@@ -29,7 +29,7 @@ This paper essentially provides a continuous formulation of the normalizing flow
 1. [Quora explanation by Sam Wang](https://www.quora.com/What-is-variational-inference) I used his analogy
 2. [Variational Inference by David  M. Blei](https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf)
 3. [Variational Inference with Normalizing Flows Paper](https://arxiv.org/abs/1505.05770) 
-4. [Normalizing Flows](http://akosiorek.github.io/ml/2018/04/03/norm_flows.html)
+4. [Normalizing Flows](http://akosiorek.github.io/ml/2018/04/03/norm_flows.html) as suggested by zdhNarsil
 
 ### Limitations
 1. Unstraightforward Minibatching: Though minibatching can still be achieved by concatenating the states of each batch elements together to form an ODE.
